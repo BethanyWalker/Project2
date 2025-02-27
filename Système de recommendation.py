@@ -11,7 +11,7 @@ from fuzzywuzzy import fuzz, process
 import time
 
 # Load the data
-dummy = pd.read_csv('C:/Users/bmwsk/Desktop/WILD/project2/dummy.csv')
+dummy = pd.read_csv('dummy.csv')
 
 movie_title = dummy["primaryTitle"]
 movie_tconst = dummy['tconst']
@@ -79,7 +79,7 @@ if "page" not in st.session_state:
 
 # Sidebar for movie selection and weights (always visible)
 with st.sidebar:
-    st.image('C:/Users/bmwsk/Desktop/WILD/project2/un_systeme_de_recommandation_de_films.png')
+    st.image('un_systeme_de_recommandation_de_films.png')
     st.title(f"Bienvenue sur le site de recommendation du groupe Peekaboo ")
     user_text_input = st.checkbox("🎬 Liste ?", value=True)
     
